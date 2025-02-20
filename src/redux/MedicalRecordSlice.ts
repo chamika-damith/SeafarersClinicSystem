@@ -5,7 +5,7 @@ import {MedicalRecord, Patient} from "../model/types.ts";
 const initialState: MedicalRecord[] = [];
 
 const api = axios.create({
-    baseURL: "http://localhost:3000/medicalRecord",
+    baseURL: "https://seafarersclinicsystemnodejsbackend.onrender.com/medicalRecord",
 });
 
 export const saveMedicalRecord = createAsyncThunk(

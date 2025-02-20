@@ -5,7 +5,7 @@ import {Appointment, Patient} from "../model/types.ts";
 const initialState: Appointment[] = [];
 
 const api = axios.create({
-    baseURL: "http://localhost:3000/appointment",
+    baseURL: "https://seafarersclinicsystemnodejsbackend.onrender.com/appointment",
 });
 
 export const saveAppointment = createAsyncThunk(
