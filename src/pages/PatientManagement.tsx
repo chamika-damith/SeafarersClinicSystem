@@ -37,7 +37,7 @@ const PatientManagement = () => {
         <h1 className="text-2xl font-bold">Patient Management</h1>
         <button
           onClick={() => setShowAddModal(true)}
-          className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+          className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-green-500 to-teal-700 text-white rounded-lg hover:bg-gradient-to-r hover:from-green-400 hover:to-teal-600"
         >
           <Plus className="w-4 h-4" />
           Add New Patient
