@@ -5,7 +5,7 @@ import { AppDispatch, RootState } from "../../store/store.tsx";
 import { Appointment } from "../../model/types.ts";
 import {getAllAppointment, updateAppointment} from "../../redux/AppointmentSlice.ts";
 import {getAllPatient, getPatient} from "../../redux/PatientSlice.ts";
-import {Dialog,DialogContent} from "@/components/ui/dialog.tsx";
+import {Dialog} from "@/components/ui/dialog.tsx";
 
 const AddAppointmentForm = ({showEditModal, setShowEditModal , appointment}) => {
     const [id, setId] = useState(appointment?.id||"");
@@ -56,7 +56,7 @@ const AddAppointmentForm = ({showEditModal, setShowEditModal , appointment}) => 
                 setShowEditModal(false)
             }
         }}>
-            <DialogContent>
+            <div>
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
                     <div className="bg-white rounded-2xl p-6 w-full max-w-2xl shadow-lg">
                         <h2 className="text-2xl font-semibold text-gray-800 mb-4">Update Appointment</h2>
@@ -168,7 +168,7 @@ const AddAppointmentForm = ({showEditModal, setShowEditModal , appointment}) => 
                     </div>
                 </div>
 
-            </DialogContent>
+            </div>
 
         </Dialog>
     );
