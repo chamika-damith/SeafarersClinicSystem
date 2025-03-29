@@ -26,6 +26,7 @@ export const getAllAppointment = createAsyncThunk(
     async () => {
         try {
             const response = await api.get("/get");
+            console.log(response.data);
             return response.data;
         } catch (err) {
             console.error(err);
