@@ -64,7 +64,7 @@ const AppointmentManagement = () => {
                       <Clock className="w-6 h-6 text-blue-600" />
                     </div>
                     <div>
-                      <div className="font-medium">John Smith</div>
+                      <div className="font-medium">{apt.patient.name}</div>
                       <div className="text-sm text-gray-600">{apt.appointmentType}</div>
                       <div className="text-sm text-gray-500">{apt.time}</div>
                       <div className="text-sm text-gray-500">{apt.notes}</div>
